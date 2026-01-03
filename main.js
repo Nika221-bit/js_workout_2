@@ -70,3 +70,19 @@ function getOddNumbers(arr) {
             oddNumbers.push(arr[i]);
         }}return oddNumbers;}
         console.log(getOddNumbers([1, 2, 3, 4, 5, 6]));
+
+//function
+function iseven(num) {
+    if(typeof num !== "number"){
+        console.log("Invalid input")
+    }
+    else if(num % 2 === 0){
+        console.log("Even")
+    }
+    else{
+        console.log("odd")
+    }
+}
+iseven(4);   // "Even"
+iseven(7);   // "Odd"
+iseven("x"); // "Invalid input"
