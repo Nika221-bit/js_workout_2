@@ -25,4 +25,48 @@ function findSmallestNumber(numbers) {
     return min;
 }
 console.log(findSmallestNumber([10, 5, 8, 20, 3]));
-// უნდა დააბრუნოს 3
+
+//unique elements in array
+function uniqueElements(arr) {
+    let uniqueArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if(uniqueArr.includes(arr[i]) === false) {
+            uniqueArr.push(arr[i]);
+        }}
+    return uniqueArr;
+}
+    
+    console.log(uniqueElements([1, 2, 2, 3, 4, 4, 5]));
+
+//average of numbers in array
+function calculateAverage(arr) {
+    let sum = 0;
+    for(let i = 0;i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calculateAverage([10, 20, 30, 40, 50]));
+
+//sumEvenNumbers
+
+function sumEvenNumbers(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+//odd numbers
+
+function getOddNumbers(arr) {
+    let oddNumbers = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] %2 !== 0){
+            oddNumbers.push(arr[i]);
+        }}return oddNumbers;}
+        console.log(getOddNumbers([1, 2, 3, 4, 5, 6]));
